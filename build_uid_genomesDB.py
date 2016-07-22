@@ -39,6 +39,8 @@ for aFile in all_files:
 	gid = getGeneID(aFile) 
 	print "gid " + gid
 	status , output = runCommanForUID(   gid   )
+	print status
+	print output
 	if(status != 0 or not output):
 		print ("the uid does not exist for : " + aFile + "   and the gi is " + getGeneID(aFile))
 	else:
