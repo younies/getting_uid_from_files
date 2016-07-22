@@ -9,7 +9,7 @@ import commands
 def getGeneID(path):
 	first_line = ""
 	with open(path, 'r') as f:
-   		first_line = f.readline()
+		first_line = f.readline()
 	first_line = first_line.split("|")
 	return first_line[3].strip()
 
