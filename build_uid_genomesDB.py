@@ -43,6 +43,7 @@ for aFile in all_files:
 		status , output = runCommanForUID( "cat " + aFile + "  >>  " + path_to_genomeDB + output + ".fa")
 		if(status == 0):
 			print "done"
+			print "cat " + aFile + "  >>  " + path_to_genomeDB + output + ".fa"
 		else:
 			print ("not done! " + output)
 
