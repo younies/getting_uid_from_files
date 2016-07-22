@@ -36,7 +36,9 @@ print "#!/bin/bash"
 
 
 for aFile in all_files:
-	status , output = runCommanForUID(    getGeneID(aFile)   )
+	gid = getGeneID(aFile) 
+	print "gid " + gid
+	status , output = runCommanForUID(   gid   )
 	if(status != 0 or not output):
 		print ("the uid does not exist for : " + aFile + "   and the gi is " + getGeneID(aFile))
 	else:
