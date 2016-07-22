@@ -37,19 +37,19 @@ print "#!/bin/bash"
 
 for aFile in all_files:
 	gid = getGeneID(aFile) 
-	print "gid " + gid
+	#print "gid " + gid
 	status , output = runCommanForUID(   gid   )
-	print status
-	print output
+	#print status
+	#print output
 	if(status != 0 or not output):
 		print ("the uid does not exist for : " + aFile + "   and the gi is " + getGeneID(aFile))
 	else:
-		status , output2 = runCommanForUID( "cat " + aFile + "  >>  " + path_to_genomeDB + output + ".fa")
-		if(status == 0):
-			print "done"
+		#status , output2 = runCommanForUID( "cat " + aFile + "  >>  " + path_to_genomeDB + output + ".fa")
+		#if(status == 0):
+		#	print "done"
 			print "cat " + aFile + "  >>  " + path_to_genomeDB + output + ".fa"
-			print output2
-		else:
-			print ("not done! " + output2)
+		#	print output2
+		#else:
+		#	print ("not done! " + output2)
 
 
