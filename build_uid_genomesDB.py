@@ -27,7 +27,8 @@ def runCommanForUID(geneBankID):
 
 
 file_for_all_names = open(file_for_all_names, 'r')
-all_files = file_for_all_names.split("\n")
+all_files = file_for_all_names.read()
+all_files = all_files.split("\n")
 file_for_all_names.close()
 
 
