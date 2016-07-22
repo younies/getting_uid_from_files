@@ -32,7 +32,7 @@ all_files = all_files.split("\n")
 file_for_all_names.close()
 
 
-print "#!/bin/bash"
+#print "#!/bin/bash"
 
 
 for aFile in all_files:
