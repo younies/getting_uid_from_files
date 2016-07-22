@@ -42,6 +42,7 @@ for aFile in all_files:
 	#print status
 	#print output
 	if(status != 0 or not output):
+		continue;
 		print ("the uid does not exist for : " + aFile + "   and the gi is " + getGeneID(aFile))
 	else:
 		#status , output2 = runCommanForUID( "cat " + aFile + "  >>  " + path_to_genomeDB + output + ".fa")
