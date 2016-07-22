@@ -48,6 +48,7 @@ for aFile in all_files:
 		if(status == 0):
 			print "done"
 			print "cat " + aFile + "  >>  " + path_to_genomeDB + output + ".fa"
+			print output2
 		else:
 			print ("not done! " + output2)
 
